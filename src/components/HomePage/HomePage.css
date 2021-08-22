@@ -49,32 +49,24 @@
 .services {
   width: 100%;
   height: 400px;
-  background-color: red;
+  background-color: #E8EFF1;
 }
 
 .contact {
   width: 100%;
   height: 400px;
-  background-color: green;
+  background-color: #FADCD6;
 }
 
 
 @media screen and (min-width: 800px) {
-
   .banner {
-    height: 100px;
-    width: 100%;
-    /* background-color: #C9DED1; */
-    background-color: blue;
-    margin: 60px 0 20px 0;
-    display: flex;
-    justify-content: center;
+    height: 150px;
   }
 
   .header {
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-top: -30px;
+    font-size: 70px;
+    margin-top: -42px;
   }
 
   .header2 {
@@ -83,6 +75,8 @@
 
   .mainContainer {
     display: flex;
+    flex-direction: row;
+    padding: 0 200px;
   }
 
   .jerryThumb {
