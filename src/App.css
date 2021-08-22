@@ -50,6 +50,7 @@ table {
 /* Document Styles */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -113,7 +114,7 @@ input[type=text] {
 /* --------GLOBAL STYLES FOR ENTIRE APP HERE ---------- */
 
 body {
-  font-size: 12px;
+  /* font-size: 12px; */
   /* font-family: 'Roboto', helvetica, sans-Serif, Arial; */
   /* color: black; */
 }
@@ -131,9 +132,8 @@ body {
   height: 100%;
 }
 
+/*
 
-
-/*--------------------------------------------------------*/
 
 .float-left {
   float: left;
@@ -180,7 +180,6 @@ body {
 }
 
 
-/*--------------------------------------------------------*/
 
 .top {
   margin-top: 60px;
@@ -254,7 +253,6 @@ body {
 
 
 
-/*-------------Login------------------*/
 
 .form {
   margin-top: 60px;
@@ -273,7 +271,6 @@ body {
   width: 300px;
 }
 
-/*------------------------animation ---------------------------*/
 
 @keyframes fadeIn {
   to {
@@ -304,7 +301,6 @@ body {
   animation-duration: 3s;
 }
 
-/*----------------------------------------------*/
 
 
 
@@ -343,4 +339,4 @@ body {
   .input-button {
     width: 400px;
   }
-}
+} */
