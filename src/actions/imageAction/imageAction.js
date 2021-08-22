@@ -28,7 +28,6 @@ export const fetchImages = (url) => {
         if (response.status !== 200) {
           dispatch(imagesLoading(false));
           throw new Error(response.statusText);
-          console.log('error, link no good')
         }
         dispatch(imagesLoading(false));
         return response;

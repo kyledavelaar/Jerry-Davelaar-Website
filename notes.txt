@@ -1,0 +1,17 @@
+
+
+FEATURES
+  - picture/bio of Jerry
+  - services types of counselling you do
+  - phone/email contact section with google map embedded
+  - links auto scroll to the next section (don't go to different page)
+
+  - secure google email purchase
+
+
+
+jerrydavelaarchristiancounseling.com
+
+jerry@jerrydavelaarchristiancounseling.com
+
+

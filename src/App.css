@@ -1,5 +1,346 @@
 
+/*
+Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+http://cssreset.com
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+ /*    font-size: 100%;
+    font: inherit; */
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Document Styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}
+
+/* Select reset */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #aaa;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #aaa;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #aaa;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #aaa;
+}
+
+b {
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* :focus {
+    outline:none;
+    border:1px solid black;
+} */
+
+input[type=text] {
+  -webkit-appearance: none;
+}
+
+
+/* --------GLOBAL STYLES FOR ENTIRE APP HERE ---------- */
+
+body {
+  font-size: 12px;
+  /* font-family: 'Roboto', helvetica, sans-Serif, Arial; */
+  /* color: black; */
+}
+
+.index-loading-spinner {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4em;
+  color: #6384a1;
+}
+
+#app {
+  height: 100%;
+}
+
+
+
+/*--------------------------------------------------------*/
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .center {
   text-align: center;
-  background-color: red;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.padding-right-1 {
+  padding-right: 1vw;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.columns-2 {
+  column-count: 1;
+}
+
+
+/*--------------------------------------------------------*/
+
+.top {
+  margin-top: 60px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.h3-header {
+  margin-top: 0;
+}
+
+.h1-header {
+  margin-bottom: 30px;
+}
+
+.list-top {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.container-thirds {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 30px;
+  height: 400px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+
+.list-item-big img {
+  height: 150px;
+  width: auto;
+}
+
+.list-bottom {
+  padding: 0;
+  margin-top: 75px;
+  list-style-type: none;
+}
+
+.list-item-small {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.list-item-small img {
+  height: 75px;
+  width: auto;
+  margin: 0 auto;
+  width: auto;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.list-item-small img:hover {
+  box-shadow: 1px 1px 3px 1px rgba(111, 111, 111, 0.6);
+  cursor: pointer;
+}
+
+
+
+/*-------------Login------------------*/
+
+.form {
+  margin-top: 60px;
+}
+
+.input {
+  margin: 5px auto;
+  width: 300px;
+  font-size: 1em;
+  padding: 7px 0;
+}
+
+.input-button {
+  background-color: #F47474;
+  color: white;
+  width: 300px;
+}
+
+/*------------------------animation ---------------------------*/
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s ease-in 1 forwards;
+}
+
+.is-paused {
+  animation-play-state: paused;
+}
+
+.is-running {
+  animation-play-state: running;
+}
+
+@keyframes scale-up {
+  0% {height: 75px}
+  100% {height: 150px}
+}
+
+.move {
+  animation-name: scale-up;
+  animation-duration: 3s;
+}
+
+/*----------------------------------------------*/
+
+
+
+@media (min-width: 700px) {
+  .link {
+    font-size: 1.5em;
+  }
+  .link-right {
+    margin-left: 70px;
+  }
+
+  .link-left {
+    margin-left: 40px;
+  }
+
+  .logo {
+    height: 70px;
+    width: auto;
+  }
+
+  .columns-2 {
+    column-count: 2;
+    column-gap: 60px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightgrey;
+  }
+
+  .input {
+    margin: 10px auto;
+    width: 400px;
+    font-size: 1em;
+    padding: 15px 0;
+  }
+
+  .input-button {
+    width: 400px;
+  }
 }

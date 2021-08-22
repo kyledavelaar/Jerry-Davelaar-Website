@@ -5,3 +5,6 @@
   * CSS modules
 
 
+npm run server
+
+npm start

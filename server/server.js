@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const mongoose = require('mongoose');
-const userController = require('./user/userController');
-const gifController = require('./gif/gifController');
-const bodyParser = require('body-parser');
+// const mongoose = require('mongoose');
+// const userController = require('./user/userController');
+// const gifController = require('./gif/gifController');
+// const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const cookieController = require('./cookieController');
+// const cookieController = require('./cookieController');
 const path = require('path');
 const cors = require('cors');
 
@@ -17,35 +17,35 @@ app.use(function(req, res, next) {
   next();
 });
 
-mongoose.connect('mongodb://localhost/giferent');
+// mongoose.connect('mongodb://localhost/giferent');
 
-mongoose.connection.once('open', () => console.log('connected to database'))
+// mongoose.connection.once('open', () => console.log('connected to database'))
 
 // app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(cookieParser());
 
 // app.use('/createUser', cookieController.setCookie);
 
+
+// app.get('/checkCookie', cookieController.isLoggedIn);
+
 app.use(express.static(path.join(__dirname, '../build/')))
-
-app.get('/checkCookie', cookieController.isLoggedIn);
-
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../build/', 'index.html'))
 })
 
-app.get('/ping', function (req, res) {
-  return res.send('pong');
-});
+// app.get('/ping', function (req, res) {
+//   return res.send('pong');
+// });
 
-app.post('/createUser', userController.createUser);
+// app.post('/createUser', userController.createUser);
 
-app.post('/verifyUser', userController.verifyUser);
+// app.post('/verifyUser', userController.verifyUser);
 
-app.post('/createGif', gifController.createGif);
+// app.post('/createGif', gifController.createGif);
 
-app.get('/sendGif', gifController.sendGifs);
+// app.get('/sendGif', gifController.sendGifs);
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log('server connected to port', PORT));
