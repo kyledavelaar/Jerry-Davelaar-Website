@@ -13,6 +13,7 @@ const HomePage = () => (
         <h4 className={styles.header2}>MA, MDIV</h4>
       </div>
       <div className={styles.mainContainer}>
+        {/* <hr className={styles.hr} /> */}
         <div className={styles.left}>
           <img className={styles.jerryThumb} src={JerryThumb} alt="Jerry Davelaar" />
         </div>
@@ -24,9 +25,35 @@ const HomePage = () => (
           </div>
 
         </div>
+        {/* <hr className={styles.hr} /> */}
       </div>
       <div id="services" className={styles.services}>
+        <div className={styles.focus}><p>Anxiety</p></div>
+        <div className={styles.focus}><p>Depression</p></div>
+        <div className={styles.focus}><p>Relationship struggles</p></div>
+        <div className={styles.focus}><p>Mood swings</p></div>
+        <div className={styles.focus}><p>Trauma</p></div>
+        <div className={styles.focus}><p>Shame and guilt</p></div>
+        <div className={styles.focus}><p>Addictive behaviors</p></div>
+        <div className={styles.focus}><p>Infidelity</p></div>
 
+        {/* <h4>Areas of Focus</h4>
+        <ul>
+          <li>Anxiety issues</li>
+          <li>Depression and low self-esteem</li>
+          <li>Relationship struggles</li>
+          <li>Mood swings and emotional escalation struggles</li>
+          <li>Trauma and abuse issues</li>
+          <li>Shame and guilt</li>
+          <li>Addictive behaviors</li>
+          <li>Infidelity</li>
+        </ul>
+        <h4>Works With</h4>
+        <ul>
+          <li>Individual Adults</li>
+          <li>Couples</li>
+          <li>Families</li>
+        </ul> */}
       </div>
       <div id="contact" className={styles.contact}>
 
