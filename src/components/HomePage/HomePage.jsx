@@ -57,7 +57,7 @@ const HomePage = () => (
           </div>
           <div className={styles.infoLine}>
             <h3>ADDRESS</h3>
-            <h5>5242 Katella Ave #206</h5>
+            <h5>5242 Katella Ave Suite 206</h5>
             <h5>Los Alamitos, CA 90720</h5>
           </div>
         </div>
