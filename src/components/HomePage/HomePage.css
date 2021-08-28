@@ -25,13 +25,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin: 0 0 60px 0;
 }
 
 .jerryThumb {
   height: 200px;
   box-shadow: 3px 3px 10px 3px rgb(211 211 211);
-  margin-right: 20px;
   border-radius: 4px;
+  margin: 0 0 30px 0;
+}
+
+.right {
+  width: 90vw;
 }
 
 .bodyContainer {
@@ -53,8 +58,7 @@
 }
 
 .servicesContainer {
-  margin: 0 0 100px 0;
-
+  margin: 0 0 60px 0;
 }
 
 .services {
@@ -64,7 +68,7 @@
 }
 
 .services > div {
-  height: 300px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,8 +105,7 @@
 
 .focus {
   width: 25%;
-  height: 200px;
-  /* background-color: red; */
+  height: 50px;
 }
 
 .contact {
@@ -112,21 +115,27 @@
 }
 
 .info {
-  margin: 0 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .infoLine {
-  margin: 10px 0 50px 0;
+  margin: 7px 0 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 320px;
 }
 
 .infoLine > h3 {
-  margin: 10px 0 15px 0;
-  font-size: 22px;
+  margin: 7px 0 10px 0;
+  font-size: 16px;
 }
 
 .infoLine > h5,a {
-  margin: 10px 0;
-  font-size: 18px;
+  margin: 7px 0;
+  font-size: 12px;
 }
 
 .sectionHeaderContainer {
@@ -136,13 +145,14 @@
 
 .headerLine {
   background: #ccc;
-  width: 70%;
-  height: 5px;
+  width: 90%;
+  height: 3px;
   border-radius: 8px;
+  /* margin: 15px;   */
 }
 
 .sectionHeader {
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .mapContainer {
@@ -158,6 +168,15 @@ iframe {
 
 
 @media screen and (min-width: 800px) {
+  .headerLine {
+    width: 70%;
+    height: 5px;
+  }
+
+  .sectionHeader {
+    font-size: 40px;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -175,6 +194,10 @@ iframe {
 
   .header2 {
 
+  }
+
+  .right {
+    width: 100vw;
   }
 
   .bioContainer {
@@ -203,6 +226,10 @@ iframe {
     line-height: 20px;
   }
 
+  .servicesContainer {
+    margin: 0 0 100px 0;
+  }
+
   .services > div {
     height: 300px;
     display: flex;
@@ -210,8 +237,41 @@ iframe {
     align-items: center;
   }
 
+  .focus {
+    width: 25%;
+    height: 200px;
+  }
+
   .hr {
     width: 90%;
     height: 5px;
+  }
+
+  .sectionHeaderContainer {
+    margin: 0 0 30px 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoLine {
+    margin: 10px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 350px;
+  }
+
+  .infoLine > h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+  }
+
+  .infoLine > h5,a {
+    /* margin: 10px 0; */
+    font-size: 18px;
   }
 }
