@@ -59,48 +59,55 @@
 
 .servicesContainer {
   margin: 0 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .services {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .services > div {
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex: 1 0 50%;
 }
 
 .services > div:nth-of-type(1) {
-  background-color: #D996A2;
+  background: #D996A2;
 }
 .services > div:nth-of-type(2) {
-  background-color: #365943;
+  background: #4a7d5d;
 }
 .services > div:nth-of-type(3) {
-  background-color: #85A68D;
+  background: #85A68D;
 }
 .services > div:nth-of-type(4) {
-  background-color: #DBCCBF;
+  background: #DBCCBF;
 }
 .services > div:nth-of-type(5) {
-  background-color: #CCD9CC;
+  background: #CCD9CC;
 }
 .services > div:nth-of-type(6) {
-  background-color: #A69A60;
+  background: #A69A60;
+  /* background: #CADED2; */
 }
 .services > div:nth-of-type(7) {
-  background-color: #D996A2;
+  background: #B3C4B9;
 }
 .services > div:nth-of-type(8) {
-  background-color: #CCC6C6;
+  background: #CCC6C6;
 }
 
 .services > div > p {
-  /* position: relative; */
+  font-size: 16px;
+  white-space: pre-line;
 }
 
 .focus {
@@ -148,7 +155,6 @@
   width: 90%;
   height: 3px;
   border-radius: 8px;
-  /* margin: 15px;   */
 }
 
 .sectionHeader {
@@ -228,13 +234,25 @@ iframe {
 
   .servicesContainer {
     margin: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    width: 60%;
   }
 
   .services > div {
-    height: 300px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 0 25%;
+  }
+
+  .services > div > p {
+    font-size: 22px;
   }
 
   .focus {

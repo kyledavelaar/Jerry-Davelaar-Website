@@ -23,7 +23,7 @@ const HomePage = () => (
           </div>
         </div>
       </section>
-      <section className={styles.servicesContainer}>
+      <section id="services" className={styles.servicesContainer}>
         <div className={styles.sectionHeaderContainer}>
           <hr className={styles.headerLine}/>
           <h1 className={styles.sectionHeader}>SERVICES</h1>
@@ -32,11 +32,11 @@ const HomePage = () => (
         <div className={styles.services}>
           <div className={styles.focus}><p>Anxiety</p></div>
           <div className={styles.focus}><p>Depression</p></div>
-          <div className={styles.focus}><p>Relationship struggles</p></div>
-          <div className={styles.focus}><p>Mood swings</p></div>
+          <div className={styles.focus}><p>{'Relationship \n Struggles'}</p></div>
+          <div className={styles.focus}><p>{'Mood \n swings'}</p></div>
           <div className={styles.focus}><p>Trauma</p></div>
-          <div className={styles.focus}><p>Shame and guilt</p></div>
-          <div className={styles.focus}><p>Addictive behaviors</p></div>
+          <div className={styles.focus}><p>{'Shame \n and \n Guilt'}</p></div>
+          <div className={styles.focus}><p>{'Addictive \n Behaviors'}</p></div>
           <div className={styles.focus}><p>Infidelity</p></div>
         </div>
       </section>
