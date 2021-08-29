@@ -11,9 +11,9 @@
 }
 
 .header {
-  font-size: 25px;
+  font-size: 30px;
   text-transform: uppercase;
-  margin-top: -15px;
+  margin-top: -18px;
 }
 
 .header2 {
@@ -50,6 +50,7 @@
   margin: 5px 10px 5px 5px;
   font-size: 11px;
   line-height: 16px;
+  font-weight: 300;
 }
 
 .bodyLine {
@@ -136,13 +137,15 @@
 }
 
 .infoLine > h3 {
-  margin: 7px 0 10px 0;
+  margin: 7px 0 2px 0;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .infoLine > h5,a {
-  margin: 7px 0;
+  margin: 7px 0 0 0;
   font-size: 12px;
+  font-weight: 300;
   overflow-wrap: anywhere;
 }
 
@@ -154,7 +157,7 @@
 .headerLine {
   background: #ccc;
   width: 90%;
-  height: 3px;
+  height: 2px;
   border-radius: 8px;
 }
 
@@ -183,7 +186,7 @@ iframe {
 @media screen and (min-width: 800px) {
   .headerLine {
     width: 70%;
-    height: 5px;
+    height: 3px;
   }
 
   .sectionHeader {
@@ -234,7 +237,7 @@ iframe {
   }
 
   .body {
-    margin: 10px 40px 10px 10px;
+    margin: 10px 0px 10px 10px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -287,11 +290,11 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    width: 390px;
+    width: 410px;
   }
 
   .infoLine > h3 {
-    margin: 0 0 10px 0;
+    margin: 0 0 2px 0;
     font-size: 22px;
   }
 

@@ -49,11 +49,11 @@ const HomePage = () => (
         <div className={styles.info}>
           <div className={styles.infoLine}>
             <h3>EMAIL</h3>
-            <a href="mailto: v">jerry@jerrydavelaarcristiancounseling.com</a>
+            <a href="mailto: jerry@jerryDavelaarChristianCounseling.com">jerry@jerryDavelaarChristianCounseling.com</a>
           </div>
           <div className={styles.infoLine}>
             <h3>PHONE</h3>
-            <h5>562-555-5555</h5>
+            <h5>562-472-8906</h5>
           </div>
           <div className={styles.infoLine}>
             <h3>ADDRESS</h3>
