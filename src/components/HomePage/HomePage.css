@@ -46,6 +46,13 @@
   justify-content: center;
 }
 
+.aboutContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .body {
   margin: 5px 10px 5px 5px;
   font-size: 11px;
@@ -240,6 +247,10 @@ iframe {
     margin: 10px 0px 10px 10px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .aboutContainer {
+    width: 70%;
   }
 
   .servicesContainer {
