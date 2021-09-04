@@ -226,12 +226,13 @@ iframe {
   .bioContainer {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     width: 70%;
     margin: 0 0 100px 0;
   }
 
   .jerryThumb {
-    height: 300px;
+    height: 350px;
     box-shadow: 3px 3px 10px 3px rgb(211 211 211);
     margin-right: 40px;
   }
