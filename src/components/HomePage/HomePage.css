@@ -17,7 +17,7 @@
 }
 
 .header2 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .bioContainer {
@@ -55,7 +55,7 @@
 
 .body {
   margin: 5px 10px 5px 5px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 16px;
   font-weight: 300;
 }
@@ -216,7 +216,7 @@ iframe {
   }
 
   .header2 {
-
+    font-size: 18px;
   }
 
   .right {
@@ -246,7 +246,7 @@ iframe {
 
   .body {
     margin: 10px 0px 10px 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
 

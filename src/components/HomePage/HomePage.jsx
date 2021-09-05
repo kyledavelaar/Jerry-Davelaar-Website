@@ -62,6 +62,8 @@ const HomePage = () => (
         <div className={styles.aboutContainer}>
           <p className={styles.body}>My standard fee per a 50 minute session is $160. I do give pastors and church staff a fee reduction. Their fee is $130. I accept payment by credit card, debit card, Apple or Google pay. </p>
           <p className={styles.body}>I am not a provider for any health insurance panel and will not be responsible for any insurance billing. I will provide clients with super bills if they choose to submit their therapy cost to their insurance company for reimbursement. What I have seen is that most PPO insurance policies reimburse about 50-60% of the cost for out-of-network therapy. HMO’s generally do not cover out-of-network therapy cost. It is my client’s responsibility to check with their insurance company to learn what their policy covers. </p>
+          <p className={styles.body}>Licence number LMFT51996.</p>
+
         </div>
       </section>
       <section id="contact" className={styles.contact}>

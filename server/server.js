@@ -8,7 +8,9 @@ const cookieParser = require('cookie-parser');
 // const cookieController = require('./cookieController');
 const path = require('path');
 const cors = require('cors');
+const sslRedirect = require('heroku-ssl-redirect').default;
 
+app.use(sslRedirect());
 app.use(cors());
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
