@@ -11,7 +11,7 @@ const NavBar = () => (
       <li className={[styles.link_right, styles.logo].join(' ')}><img src={Logo} alt="Jerry Davelaar Christian Counseling" /></li>
       <li className={[styles.link_right].join(' ')} ><a className={styles.link} href="#about">About</a></li>
       <li className={[styles.link_right].join(' ')} ><a className={styles.link} href="#services">Services</a></li>
-      {width > 700 && (
+      {width > 300 && (
           <li className={[styles.link_right].join(' ')} ><a className={styles.link} href="#fees">Fees</a></li>
         )
       }

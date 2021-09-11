@@ -47,6 +47,8 @@ nav li {
 .link:hover {
   text-decoration: none;
   color: #FADCD6;
+  /* color: #769180; */
+  /* color: #CADED2; */
 }
 
 @media screen and (min-width: 800px) {
@@ -84,10 +86,5 @@ nav li {
 
   .link-left {
     margin-left: 10px;
-  }
-
-  .link:hover {
-    text-decoration: none;
-    color: #F47474;
   }
 }

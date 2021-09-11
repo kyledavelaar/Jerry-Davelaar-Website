@@ -1,0 +1,4 @@
+export const fees = [
+  "Jerry’s standard fee per a 50 minute session is $160. He gives pastors and church staff a fee reduction. Their fee is $130. Jerry accepts payment by credit card, debit card, Apple or Google pay, and HSA (Health Saving Account) and FSA (Flexible Spending Account) cards.",
+  "Jerry is not a provider for any health insurance panel and will not be responsible for any insurance billing. He will provide clients with super bills if they choose to submit their therapy cost to their insurance company for reimbursement. What he has seen is that most PPO insurance policies reimburse about 50-60% of the cost for out-of-network therapy. HMO’s generally do not cover out-of-network therapy cost. Jerry recommends clients check with their insurance company to learn what their policy covers."
+]

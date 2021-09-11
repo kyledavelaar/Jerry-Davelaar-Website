@@ -3,7 +3,7 @@
 .banner {
   height: 80px;
   width: 100%;
-  background-color: #C9DED1;
+  background: #C9DED1;
   margin: 60px 0 20px 0;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,8 @@
 }
 
 .header2 {
-  font-size: 12px;
+  font-size: 10px;
+  margin-bottom: 4px;
 }
 
 .bioContainer {
@@ -76,10 +77,13 @@
   width: 80%;
   display: flex;
   flex-wrap: wrap;
+  /* background: #C9DED1; */
+  background:#769180;
 }
 
-.services > div {
-  height: 100px;
+.service {
+  width: 25%;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +91,13 @@
   flex: 1 0 50%;
 }
 
-.services > div:nth-of-type(1) {
+.service > p {
+  font-size: 12px;
+  white-space: pre-line;
+  color: white;
+}
+
+/* .services > div:nth-of-type(1) {
   background: #D996A2;
 }
 .services > div:nth-of-type(2) {
@@ -104,24 +114,13 @@
 }
 .services > div:nth-of-type(6) {
   background: #A69A60;
-  /* background: #CADED2; */
 }
 .services > div:nth-of-type(7) {
   background: #B3C4B9;
 }
 .services > div:nth-of-type(8) {
   background: #CCC6C6;
-}
-
-.services > div > p {
-  font-size: 16px;
-  white-space: pre-line;
-}
-
-.focus {
-  width: 25%;
-  height: 50px;
-}
+} */
 
 .contact {
   display: flex;
@@ -163,6 +162,7 @@
 
 .headerLine {
   background: #ccc;
+  /* background: #C9DED1; */
   width: 90%;
   height: 2px;
   border-radius: 8px;
@@ -217,6 +217,7 @@ iframe {
 
   .header2 {
     font-size: 18px;
+    margin-bottom: 4px;
   }
 
   .right {
@@ -265,21 +266,17 @@ iframe {
     width: 60%;
   }
 
-  .services > div {
-    height: 220px;
+  .service {
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 0 25%;
+    flex: 1 0 20%;
   }
 
-  .services > div > p {
-    font-size: 22px;
-  }
-
-  .focus {
-    width: 25%;
-    height: 200px;
+  .service > p {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .hr {
